@@ -7,7 +7,7 @@ import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
 
 import uiRouter from 'angular-ui-router';
-
+import uiBootstrap from 'angular-ui-bootstrap';
 // import ngMessages from 'angular-messages';
 // import ngValidationMatch from 'angular-validation-match';
 
@@ -27,8 +27,8 @@ import util from '../components/util/util.module';
 
 import './app.scss';
 
-angular.module('hackthonG2App', [ngCookies, ngResource, ngSanitize, uiRouter, _Auth, account, admin,
-  navbar, footer, main, constants, util
+angular.module('hg2App', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth,
+  account, admin, navbar, footer, main, constants, util
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
@@ -46,7 +46,7 @@ angular.module('hackthonG2App', [ngCookies, ngResource, ngSanitize, uiRouter, _A
 
 angular.element(document)
   .ready(() => {
-    angular.bootstrap(document, ['hackthonG2App'], {
+    angular.bootstrap(document, ['hg2App'], {
       strictDi: true
     });
   });

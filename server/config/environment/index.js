@@ -33,7 +33,7 @@ var all = {
 
   // Secret for session, you will want to change this and make it an environment variable
   secrets: {
-    session: 'hackthon-g2-secret'
+    session: 'aaaaa-secret'
   },
 
   // MongoDB connection options
@@ -49,12 +49,6 @@ var all = {
     clientID: process.env.FACEBOOK_ID || 'id',
     clientSecret: process.env.FACEBOOK_SECRET || 'secret',
     callbackURL: `${process.env.DOMAIN || ''}/auth/facebook/callback`
-  },
-
-  twitter: {
-    clientID: process.env.TWITTER_ID || 'id',
-    clientSecret: process.env.TWITTER_SECRET || 'secret',
-    callbackURL: `${process.env.DOMAIN || ''}/auth/twitter/callback`
   },
 
   google: {

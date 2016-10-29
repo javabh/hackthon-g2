@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/hackthong2-dev'
+    uri: 'mongodb://localhost/aaaaa-dev'
   },
 
   // Seed database on startup

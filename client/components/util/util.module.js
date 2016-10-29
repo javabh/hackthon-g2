@@ -5,6 +5,6 @@ import {
   UtilService
 } from './util.service';
 
-export default angular.module('hackthonG2App.util', [])
+export default angular.module('hg2App.util', [])
   .factory('Util', UtilService)
   .name;

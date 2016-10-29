@@ -33,7 +33,7 @@ export class MainController {
   }
 }
 
-export default angular.module('hackthonG2App.main', [uiRouter])
+export default angular.module('hg2App.main', [uiRouter])
   .config(routing)
   .component('main', {
     template: require('./main.html'),

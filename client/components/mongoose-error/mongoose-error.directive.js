@@ -5,7 +5,7 @@ import angular from 'angular';
 /**
  * Removes server error when user updates input
  */
-angular.module('hackthonG2App')
+angular.module('hg2App')
   .directive('mongooseError', function() {
     return {
       restrict: 'A',

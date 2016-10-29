@@ -37,7 +37,5 @@ function startServer() {
 
 setImmediate(startServer);
 
-console.log(process.env.PORT);
-
 // Expose app
 exports = module.exports = app;
