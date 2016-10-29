@@ -1,12 +1,31 @@
 <div class="container">
-  <p>The delete user and user index api routes are restricted to users with the 'admin' role.</p>
-  <ul class="list-group user-list">
-    <li class="list-group-item" ng-repeat="user in admin.users">
-	    <div class="user-info">
-	        <strong>{{user.name}}</strong><br>
-	        <span class="text-muted">{{user.email}}</span>
-	    </div>
-        <a ng-click="admin.delete(user)" class="trash"><span class="fa fa-trash fa-2x"></span></a>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+      <h1>Novo formulário <small>Você tem 12 créditos</small></h1>
+
+      <hr>
+
+      <div class="well">
+        <form name="newQuestion" ng-submit="newquestion.submitForm()">
+          <div class="form-group">
+            <label><h4>Título</h4></label>
+            <input class="form-control" type="text" name="title" value="" placeholder="Ex.: Pesquisa de salário de desenvolvedores">
+          </div>
+          <div class="form-group">
+            <label><h4>URL</h4></label>
+            <input class="form-control" type="text" name="url" value="" placeholder="Ex.: http://foo.bar">
+          </div>
+          <div class="form-group">
+            <label><h4>Tags</h4></label>
+            <textarea class="form-control" name="tags" rows="3" placeholder="Ex.: saúde, educação"></textarea>
+          </div>
+          <div class="form-group">
+            <p>Custo de envio de formulário: 10 créditos</p>
+            <a ui-sref="myquestions" class="btn btn-block btn-lg btn-success">Enviar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
