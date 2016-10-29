@@ -4,10 +4,18 @@
 import angular from 'angular';
 
 export class NavbarComponent {
-  menu = [{
-    title: 'Home',
-    state: 'main'
-  }];
+  menu = [
+    {
+      title: 'Home',
+      state: 'main'
+    }, {
+      title: 'Perguntas',
+      state: 'questions'
+    }, {
+      title: 'Nova pergunta',
+      state: 'newquestion'
+    }
+  ];
 
   isCollapsed = true;
 
